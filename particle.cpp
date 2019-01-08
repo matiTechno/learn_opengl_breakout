@@ -42,7 +42,7 @@ void Particle_generator::draw()
         {
             texture->bind();
 
-            glm::mat4 model;
+            glm::mat4 model(1.f);
             // translation
             model = glm::translate(model, glm::vec3(i->position, 0));
             //scaling

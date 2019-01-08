@@ -39,7 +39,7 @@ void Sprite_renderer::render(Texture* texture, const glm::vec2& position, const 
 {
     texture->bind();
 
-    glm::mat4 model;
+    glm::mat4 model(1.f);
     // translation
     model = glm::translate(model, glm::vec3(position, 0));
     // rotation
